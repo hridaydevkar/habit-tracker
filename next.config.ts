@@ -2,8 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
-  output: 'export',
-  basePath: '/habit-tracker',
+  // Remove output/basePath for Vercel, or use for manual deployment
+  // output: 'export',
+  // basePath: '/habit-tracker',
   images: {
     unoptimized: true,
   },
