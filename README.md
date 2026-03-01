@@ -6,8 +6,13 @@ A gamified micro-habit tracker that makes building daily routines actually fun. 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
 ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4-38bdf8?logo=tailwindcss)
 ![PWA](https://img.shields.io/badge/PWA-Ready-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-## What is this?
+## 🚀 Live Demo
+
+**[Try HabitFlow →](https://hridaydevkar.github.io/habit-tracker/)**
+
+## ✨ What is this?
 
 I kept forgetting to track my habits. Tried journals, tried notes apps, tried a bunch of habit trackers — most felt boring or way too complex. So I built this.
 
@@ -25,7 +30,7 @@ HabitFlow is a web app where you can:
 
 Everything stays in your browser's localStorage — no accounts, no backend, no tracking.
 
-## Tech Stack
+## 🛠 Tech Stack
 
 | What | Why |
 |------|-----|
@@ -36,8 +41,9 @@ Everything stays in your browser's localStorage — no accounts, no backend, no 
 | **Recharts** | Charts that actually look good |
 | **Lucide Icons** | Clean, consistent icon set |
 | **date-fns** | Date math without losing my mind |
+| **DnD Kit** | Drag-and-drop habit reordering |
 
-## Getting Started
+## 🚀 Getting Started
 
 ```bash
 # clone it
@@ -52,14 +58,26 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) and you're good.
-
-### Build for production
+📦 Build for production
 
 ```bash
 npm run build
 npm start
 ```
 
+### 🌐 Deploy to GitHub Pages
+
+This project is configured for GitHub Pages deployment. Push to main branch and GitHub Actions will automatically deploy.
+
+```bash
+git add .
+git commit -m "Deploy to GitHub Pages"
+git push origin main
+```
+
+The site will be available at `https://yourusername.github.io/habit-tracker/`
+
+## 📁
 ## Project Structure
 
 ```
@@ -71,34 +89,69 @@ src/
 │   ├── achievements/      # Badge collection
 │   └── settings/          # Theme, sounds, data export
 ├── components/            # Reusable UI components
-│   ├── HabitCard.tsx      # Individual habit card
-│   ├── AddHabitModal.tsx  # Add habit (templates + custom)
-│   ├── BottomNav.tsx      # Tab navigation
-│   └── ...
-├── lib/                   # Business logic & state
-│   ├── HabitContext.tsx   # Global state (React Context)
-│   ├── storage.ts         # localStorage persistence
-│   ├── habitTemplates.ts  # Pre-built habit templates
-│   └── ThemeProvider.tsx  # Theme management
-└── types/                 # TypeScript type definitions
-```
+│  🎯 Features in Detail
 
-## Features in Detail
-
-### Gamification
+### 🎮 Gamification
 
 The whole point is making habit tracking feel rewarding. Every completion earns XP, longer streaks give bonus points, and there are 15+ achievements to unlock. The level system goes from "Seedling" to "Transcendent" — silly, but it works.
 
-### Smart Nudges
+### 💡 Smart Nudges
 
 The app shows contextual messages based on what's happening — streak warnings if you might break one, motivational quotes, and daily challenges. Can be turned off in settings if they get annoying.
 
-### Data Portability
+### 📊 Data Portability
 
 Everything's stored locally. You can export all your data as JSON from Settings and import it on another device. No vendor lock-in.
 
-## Deploy
+### 🎨 Customization
 
+- Choose from emerald, amber, or purple color themes for each habit
+- 16+ icons to personalize habits
+- Dark mode and light mode (with a cozy pink theme)
+- Drag-and-drop to reorder habits
+
+### 📱 Progressive Web App
+
+Install HabitFlow on your phone or desktop like a native app. Works offline, sends reminders, and feels native.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please check out the [CONTRIBUTING.md](CONTRIBUTING.md) guide.
+
+### Local Development Setup
+
+1. Fork and clone the repo
+2. Install dependencies: `npm install`
+3. Create a branch: `git checkout -b feature/your-feature`
+4. Make your changes and test thoroughly
+5. Commit: `git commit -m "Add your feature"`
+6. Push: `git push origin feature/your-feature`
+7. Open a Pull Request
+
+## 📄 License
+
+MIT — do whatever you want with it. See [LICENSE](LICENSE) for details.
+
+## 🙏 Acknowledgments
+
+Built with inspiration from:
+- **Duolingo** - for streak psychology
+- **Streaks** - for minimal iPhone design
+- **Habitica** - for gamification ideas
+
+## 📬 Contact
+
+Created by [@hridaydevkar](https://github.com/hridaydevkar)
+
+Found a bug? Have a feature request? [Open an issue](https://github.com/hridaydevkar/habit-tracker/issues)!
+
+## ⭐ Star History
+
+If you find this project useful, consider giving it a star! ⭐
+
+---
+
+**Made with 🌱 for building better habits**
 This is a standard Next.js app. Easiest way to deploy:
 
 1. Push to GitHub
